@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chatgpt_reviews"
+version = "0.1.0"
+description = "Exploratory data analysis and cleaning project using ChatGPT review data."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "ipykernel",
+]
+
+[tool.setuptools]
+package-dir = {"" = "03_src"}
+
+[tool.setuptools.packages.find]
+where = ["03_src"]
